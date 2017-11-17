@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal</title>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/xterm.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <link href="static/css/xterm.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="loadPage()">
+    <form id="temp">
+        <input type="hidden" id="ws_server", value="{{msg.ws_server}}"/>
+        <input type="hidden" id="host", value="{{msg.host}}"/>
+        <input type="hidden" id="port", value="{{msg.port}}"/>
+        <input type="hidden" id="username", value="{{msg.username}}"/>
+        <input type="hidden" id="password", value="{{msg.password}}"/>
+    </form>
+    <div id="terminal" ></div>
+</body>
+</html>
